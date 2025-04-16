@@ -3,6 +3,7 @@ name: CICD
 on:
   push:
     branches: [ main ]
+    paths: ["terraform/**"]
 
 jobs:
   build-and-deploy:
