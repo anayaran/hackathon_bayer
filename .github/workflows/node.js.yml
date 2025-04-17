@@ -51,6 +51,7 @@ jobs:
           aws-region: us-east-1
       - name: Initialise project and view terraform plan
         run: |
+          cd Infra_components/ecr
           terraform init
       - name: Fill in the new image ID in the Amazon ECS task definition
         id: task-def
